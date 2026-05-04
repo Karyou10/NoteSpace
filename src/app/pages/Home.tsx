@@ -12,7 +12,7 @@ export default function Home() {
       <LandingPageHeader />
       
       <main className="flex flex-col items-center w-full">
-        <div className="content-stretch flex flex-col gap-[88px] items-center px-[112px] py-[88px] relative w-full">
+        <div className="content-stretch flex flex-col gap-[88px] items-center px-4 md:px-[112px] py-[88px] relative w-full">
           <HeroSection />
         </div>
 

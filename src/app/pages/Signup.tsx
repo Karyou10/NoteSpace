@@ -102,7 +102,7 @@ export default function Signup() {
       <div className="absolute inset-0 flex items-center min-h-screen">
         {/* Left Side - Form */}
         <div className="w-1/2 flex flex-col items-center justify-center relative py-[88px]">
-          <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-[485px]">
+          <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full max-w-[485px]">
             <form onSubmit={handleSubmit} className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-full">
               {/* Header */}
               <div className="content-stretch flex flex-col gap-[8px] items-start not-italic relative shrink-0 w-full">

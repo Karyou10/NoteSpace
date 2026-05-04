@@ -104,11 +104,11 @@ function TextFields() {
 function Frame7() {
   return (
     <div className="content-stretch flex flex-col gap-[14px] items-start relative shrink-0 w-full">
-      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[485px]" data-name="Text Fields">
+      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full max-w-[485px]" data-name="Text Fields">
         <p className="font-['General_Sans',sans-serif] font-semibold leading-[1.6] not-italic relative shrink-0 text-[#5b5c60] text-[14px] w-full">Email Address</p>
         <Frame />
       </div>
-      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[485px]">
+      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full max-w-[485px]">
         <TextFields />
       </div>
     </div>
@@ -158,7 +158,7 @@ function CreateAnAccount() {
 
 function Frame6() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-[485px]">
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full max-w-[485px]">
       <CreateAnAccount />
       <p className="font-['General_Sans',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#545454] text-[0px] text-[14px] text-center w-full whitespace-pre-wrap">
         <span className="leading-[1.6] text-[#b4b4b4]">Already have an Account?</span>
@@ -172,7 +172,7 @@ function Frame6() {
 function Frame13() {
   return (
     <div className="content-stretch flex items-center justify-center relative shrink-0">
-      <div className="h-[1024px] relative rounded-bl-[24px] rounded-tl-[24px] shrink-0 w-[712px]" data-name="image 1">
+      <div className="h-[1024px] relative rounded-bl-[24px] rounded-tl-[24px] shrink-0 w-full max-w-[712px]" data-name="image 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-bl-[24px] rounded-tl-[24px] size-full" src={imgImage1} />
       </div>
     </div>

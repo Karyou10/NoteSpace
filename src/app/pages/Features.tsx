@@ -7,8 +7,8 @@ export default function Features() {
     <div className="bg-[#fefefe] flex flex-col min-h-screen w-full">
       <LandingPageHeader />
       
-      <main className="flex flex-col items-center w-full flex-1 px-[112px] py-[88px]">
-        <div className="max-w-[1216px] w-full">
+      <main className="flex flex-col items-center w-full flex-1 px-4 md:px-[112px] py-[88px]">
+        <div className="max-w-full max-w-[1216px] w-full">
           <h1 className="font-['General_Sans',sans-serif] font-bold text-[56px] text-[#545454] leading-[1.4] mb-[24px]">
             Features
           </h1>

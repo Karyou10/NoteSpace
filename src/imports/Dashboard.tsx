@@ -327,7 +327,7 @@ function Frame1() {
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center justify-between pl-[32px] pr-[112px] py-[8px] relative size-full">
           <Frame />
-          <div className="bg-[#f0f0f0] content-stretch flex gap-[8px] h-[48px] items-center px-[16px] py-[8px] relative rounded-[16px] shrink-0 w-[418px]" data-name="Buttons">
+          <div className="bg-[#f0f0f0] content-stretch flex gap-[8px] h-[48px] items-center px-[16px] py-[8px] relative rounded-[16px] shrink-0 w-full max-w-[418px]" data-name="Buttons">
             <div className="relative shrink-0 size-[20px]" data-name="Format=Outline, Weight=Regular">
               <div className="absolute inset-[9.29%_9.37%_9.37%_9.29%]" data-name="Vector">
                 <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.2676 16.2676">

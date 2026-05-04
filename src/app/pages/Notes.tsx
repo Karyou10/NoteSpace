@@ -129,7 +129,7 @@ export default function Notes() {
       {/* Logout Confirmation Modal */}
       {showLogoutModal && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-[16px] p-[32px] flex flex-col items-center gap-[24px] w-[320px]">
+          <div className="bg-white rounded-[16px] p-[32px] flex flex-col items-center gap-[24px] w-full max-w-[320px]">
             <div className="relative shrink-0 size-[48px]">
               <div className="absolute inset-[12.5%_9.37%_12.5%_15.63%]">
                 <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 36 36">
@@ -287,7 +287,7 @@ export default function Notes() {
             </p>
           </div>
 
-          <div className="bg-[#f0f0f0] flex gap-[8px] items-center px-[16px] py-[8px] rounded-[16px] w-[418px]">
+          <div className="bg-[#f0f0f0] flex gap-[8px] items-center px-[16px] py-[8px] rounded-[16px] w-full max-w-[418px]">
             <Search className="size-[20px] text-[#6c6c6c]" />
             <input
               type="text"
@@ -321,7 +321,7 @@ export default function Notes() {
         <div className="flex-1 overflow-y-auto px-[32px] py-[40px]">
           {isNewUser || notes.length === 0 ? (
             // Empty State
-            <div className="flex flex-col gap-[58px] items-center max-w-[1152px] mx-auto">
+            <div className="flex flex-col gap-[58px] items-center max-w-full max-w-[1152px] mx-auto">
               <div className="flex flex-col gap-[8px] items-center text-center w-full">
                 <p className="font-['General_Sans',sans-serif] font-semibold text-[28px] text-[#545454]">
                   {getGreeting()}, {userName}
@@ -358,7 +358,7 @@ export default function Notes() {
             </div>
           ) : (
             // Populated State
-            <div className="flex flex-col gap-[32px] max-w-[1152px] mx-auto w-full">
+            <div className="flex flex-col gap-[32px] max-w-full max-w-[1152px] mx-auto w-full">
               <div className="flex flex-col gap-[8px] items-center text-center w-full">
                 <p className="font-['General_Sans',sans-serif] font-semibold text-[28px] text-[#545454]">
                   {getGreeting()}, {userName}

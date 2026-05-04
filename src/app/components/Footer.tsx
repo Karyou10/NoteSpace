@@ -6,7 +6,7 @@ export default function Footer() {
       {/* CTA Section */}
       <div className="relative shrink-0 w-full">
         <div className="flex flex-col items-center justify-center size-full">
-          <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-[112px] py-[24px] relative w-full">
+          <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-4 md:px-[112px] py-[24px] relative w-full">
             <div className="content-stretch flex flex-col gap-[16px] items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
               <div className="flex flex-col font-['General_Sans',sans-serif] font-bold justify-center relative shrink-0 text-[#fefefe] text-[32px] w-full">
                 <p className="leading-[1.5]">Ready to start Collaborating?</p>
@@ -27,9 +27,9 @@ export default function Footer() {
 
       {/* Footer Links Section */}
       <div className="relative shrink-0 w-full">
-        <div className="content-stretch flex font-['General_Sans',sans-serif] font-medium items-start justify-between leading-[1.6] not-italic px-[112px] py-[24px] relative w-full">
+        <div className="content-stretch flex font-['General_Sans',sans-serif] font-medium items-start justify-between leading-[1.6] not-italic px-4 md:px-[112px] py-[24px] relative w-full">
           {/* Product & Legal */}
-          <div className="content-stretch flex items-start justify-between relative shrink-0 w-[316px]">
+          <div className="content-stretch flex items-start justify-between relative shrink-0 w-full max-w-[316px]">
             {/* Product */}
             <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[108px]">
               <p className="relative shrink-0 text-[#fafafa] text-[10px] w-full">Product</p>

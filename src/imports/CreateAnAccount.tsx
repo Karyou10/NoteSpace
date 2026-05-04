@@ -5,7 +5,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex font-['General_Sans',sans-serif] font-medium gap-[20px] items-start leading-[1.6] relative shrink-0 w-full whitespace-nowrap">
       <p className="relative shrink-0 text-[#545454] text-[20px]">Create an account</p>
-      <p className="absolute left-[376px] text-[#909090] text-[10px] top-[12px]">(All fields are required)</p>
+      <p className="absolute left-4 md:left-[376px] text-[#909090] text-[10px] top-[12px]">(All fields are required)</p>
     </div>
   );
 }
@@ -117,7 +117,7 @@ function Frame6() {
 
 function Frame7() {
   return (
-    <div className="absolute h-[19px] left-[120px] top-0 w-[119px]">
+    <div className="absolute h-[19px] left-4 md:left-[120px] top-0 w-[119px]">
       <div className="absolute left-0 size-[7px] top-[5.5px]" data-name="Indicators">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7 7">
           <path d={svgPaths.p1e610900} fill="var(--fill-0, #00CA51)" id="Ellipse 1" stroke="var(--stroke-0, #00CA51)" strokeWidth="0.5" />
@@ -130,7 +130,7 @@ function Frame7() {
 
 function Frame8() {
   return (
-    <div className="absolute h-[19px] left-[251px] top-0 w-[119px]">
+    <div className="absolute h-[19px] left-4 md:left-[251px] top-0 w-[119px]">
       <div className="absolute left-0 size-[7px] top-[6px]" data-name="Indicators">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7 7">
           <path d={svgPaths.p1e610900} fill="var(--fill-0, #00CA51)" id="Ellipse 1" stroke="var(--stroke-0, #00CA51)" strokeWidth="0.5" />
@@ -156,7 +156,7 @@ function Frame9() {
 
 function Frame10() {
   return (
-    <div className="absolute h-[19px] left-[382px] top-[0.5px] w-[69px]">
+    <div className="absolute h-[19px] left-4 md:left-[382px] top-[0.5px] w-[69px]">
       <div className="absolute left-0 size-[7px] top-[6px]" data-name="Indicators">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7 7">
           <path d={svgPaths.p1e610900} fill="var(--fill-0, #00CA51)" id="Ellipse 1" stroke="var(--stroke-0, #00CA51)" strokeWidth="0.5" />
@@ -244,15 +244,15 @@ function TextFields1() {
 function Frame12() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
-      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[485px]" data-name="Text Fields">
+      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full max-w-[485px]" data-name="Text Fields">
         <p className="font-['General_Sans',sans-serif] font-semibold leading-[1.6] not-italic relative shrink-0 text-[#5b5c60] text-[14px] w-full">Email Address</p>
         <Frame />
       </div>
-      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[485px]">
+      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full max-w-[485px]">
         <TextFields />
       </div>
       <Frame19 />
-      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[485px]">
+      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full max-w-[485px]">
         <TextFields1 />
       </div>
     </div>
@@ -285,7 +285,7 @@ function CreateAnAccount1() {
 
 function Frame11() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-[485px]">
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full max-w-[485px]">
       <CreateAnAccount1 />
       <p className="font-['General_Sans',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[0px] text-[14px] text-black text-center w-full whitespace-pre-wrap">
         <span className="leading-[1.6] text-[#b4b4b4]">Already have an Account?</span>

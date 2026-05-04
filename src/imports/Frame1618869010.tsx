@@ -201,7 +201,7 @@ export default function Frame6() {
     <div className="gap-x-px gap-y-px grid grid-cols-[repeat(3,fit-content(100%))] grid-rows-[repeat(2,fit-content(100%))] relative size-full">
       <div className="col-1 justify-self-stretch relative row-1 self-stretch shrink-0" data-name="Component 23">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component />
           </div>
         </div>
@@ -209,7 +209,7 @@ export default function Frame6() {
       </div>
       <div className="col-2 justify-self-stretch relative row-1 self-stretch shrink-0" data-name="Component 24">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component1 />
           </div>
         </div>
@@ -217,31 +217,31 @@ export default function Frame6() {
       </div>
       <div className="col-3 h-[263px] justify-self-stretch relative row-1 shrink-0" data-name="Component 25">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component2 />
           </div>
         </div>
         <div className="absolute bg-[#fdfdfd] border-[#c0c0c0] border-[0.5px] border-solid inset-[0_0_0.38%_0]" />
       </div>
-      <div className="col-1 relative row-2 self-stretch shrink-0 w-[405px]" data-name="Component 26">
+      <div className="col-1 relative row-2 self-stretch shrink-0 w-full max-w-[405px]" data-name="Component 26">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component3 />
           </div>
         </div>
         <div className="absolute bg-[#fdfdfd] border-[#c0c0c0] border-[0.5px] border-solid inset-[0_0_0.38%_0]" />
       </div>
-      <div className="col-2 relative row-2 self-stretch shrink-0 w-[405px]" data-name="Component 27">
+      <div className="col-2 relative row-2 self-stretch shrink-0 w-full max-w-[405px]" data-name="Component 27">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component4 />
           </div>
         </div>
         <div className="absolute bg-[#fdfdfd] border-[#c0c0c0] border-[0.5px] border-solid inset-[0_0_0.38%_0]" />
       </div>
-      <div className="col-3 h-[263px] relative row-2 shrink-0 w-[405px]" data-name="Component 28">
+      <div className="col-3 h-[263px] relative row-2 shrink-0 w-full max-w-[405px]" data-name="Component 28">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component5 />
           </div>
         </div>

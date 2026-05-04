@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <div className="content-stretch flex flex-col items-center relative shrink-0 w-full max-w-[1216px] mx-auto px-[112px]">
+    <div className="content-stretch flex flex-col items-center relative shrink-0 w-full max-w-full max-w-[1216px] mx-auto px-4 md:px-[112px]">
       <div className="grid grid-cols-3 gap-0 w-full">
         {testimonials.map((testimonial, index) => (
           <TestimonialCard

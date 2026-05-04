@@ -106,7 +106,7 @@ function Frame6() {
       <div className="h-[64px] shrink-0 w-full" />
       <div className="bg-[#fefefe] fixed top-0 left-0 z-50 shadow-[0px_8px_21.8px_0px_rgba(249,115,22,0.1)] shrink-0 w-full">
         <div className="flex flex-row items-center size-full">
-          <div className="content-stretch flex items-center justify-between px-[112px] py-[8px] relative w-full">
+          <div className="content-stretch flex items-center justify-between px-4 md:px-[112px] py-[8px] relative w-full">
             <Frame />
             <Frame4 />
             <Frame5 />
@@ -171,7 +171,7 @@ function Frame9() {
   return (
     <div className="content-stretch flex flex-col gap-[88px] items-center relative shrink-0">
       <Frame8 />
-      <div className="h-[438px] relative rounded-[24px] shrink-0 w-[803px]" data-name="image 285">
+      <div className="h-[438px] relative rounded-[24px] shrink-0 w-full max-w-[803px]" data-name="image 285">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgImage285image285} />
       </div>
     </div>
@@ -313,7 +313,7 @@ function Frame40() {
 
 function Frame41() {
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-[592px]">
+    <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full max-w-[592px]">
       <Frame40 />
     </div>
   );
@@ -321,9 +321,9 @@ function Frame41() {
 
 function Frame42() {
   return (
-    <div className="content-stretch flex flex-col gap-[10px] h-[42px] items-start overflow-clip relative shrink-0 w-[592px]">
+    <div className="content-stretch flex flex-col gap-[10px] h-[42px] items-start overflow-clip relative shrink-0 w-full max-w-[592px]">
       <Frame41 />
-      <div className="h-[42px] shrink-0 w-[592px]" style={{ backgroundImage: "linear-gradient(90deg, rgb(254, 254, 254) 0%, rgba(254, 254, 254, 0) 10%, rgba(254, 254, 254, 0) 85%, rgb(254, 254, 254) 95%)" }} />
+      <div className="h-[42px] shrink-0 w-full max-w-[592px]" style={{ backgroundImage: "linear-gradient(90deg, rgb(254, 254, 254) 0%, rgba(254, 254, 254, 0) 10%, rgba(254, 254, 254, 0) 85%, rgb(254, 254, 254) 95%)" }} />
     </div>
   );
 }
@@ -339,7 +339,7 @@ function Frame50() {
 
 function Frame51() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[734px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full max-w-[734px]">
       <Frame39 />
       <Frame50 />
     </div>
@@ -549,7 +549,7 @@ function Frame49() {
     <div className="gap-x-px gap-y-px grid grid-cols-[repeat(3,fit-content(100%))] grid-rows-[repeat(2,fit-content(100%))] relative shrink-0 w-full">
       <div className="col-1 justify-self-stretch relative row-1 self-stretch shrink-0" data-name="Component 23">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component />
           </div>
         </div>
@@ -557,7 +557,7 @@ function Frame49() {
       </div>
       <div className="col-2 justify-self-stretch relative row-1 self-stretch shrink-0" data-name="Component 24">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component1 />
           </div>
         </div>
@@ -565,31 +565,31 @@ function Frame49() {
       </div>
       <div className="col-3 h-[263px] justify-self-stretch relative row-1 shrink-0" data-name="Component 25">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component2 />
           </div>
         </div>
         <div className="absolute bg-[#fdfdfd] border-[#c0c0c0] border-[0.5px] border-solid inset-[0_0_0.38%_0]" />
       </div>
-      <div className="col-1 relative row-2 self-stretch shrink-0 w-[405px]" data-name="Component 26">
+      <div className="col-1 relative row-2 self-stretch shrink-0 w-full max-w-[405px]" data-name="Component 26">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component3 />
           </div>
         </div>
         <div className="absolute bg-[#fdfdfd] border-[#c0c0c0] border-[0.5px] border-solid inset-[0_0_0.38%_0]" />
       </div>
-      <div className="col-2 relative row-2 self-stretch shrink-0 w-[405px]" data-name="Component 27">
+      <div className="col-2 relative row-2 self-stretch shrink-0 w-full max-w-[405px]" data-name="Component 27">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component4 />
           </div>
         </div>
         <div className="absolute bg-[#fdfdfd] border-[#c0c0c0] border-[0.5px] border-solid inset-[0_0_0.38%_0]" />
       </div>
-      <div className="col-3 h-[263px] relative row-2 shrink-0 w-[405px]" data-name="Component 28">
+      <div className="col-3 h-[263px] relative row-2 shrink-0 w-full max-w-[405px]" data-name="Component 28">
         <div className="absolute flex inset-[0_0_0_0.25%] items-center justify-center">
-          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-[404px]">
+          <div className="-scale-y-100 flex-none h-[263px] rotate-180 w-full max-w-[404px]">
             <Component5 />
           </div>
         </div>
@@ -601,7 +601,7 @@ function Frame49() {
 
 function Frame54() {
   return (
-    <div className="content-stretch flex flex-col gap-[78px] items-center relative shrink-0 w-[1217px]">
+    <div className="content-stretch flex flex-col gap-[78px] items-center relative shrink-0 w-full max-w-[1217px]">
       <Frame51 />
       <Frame49 />
     </div>
@@ -610,7 +610,7 @@ function Frame54() {
 
 function Frame13() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start leading-[0] not-italic relative shrink-0 text-center w-[546px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start leading-[0] not-italic relative shrink-0 text-center w-full max-w-[546px]">
       <div className="flex flex-col font-['General_Sans',sans-serif] font-bold justify-center relative shrink-0 text-[#545454] text-[32px] w-full">
         <p className="leading-[1.5]">Everything you need to collaborate</p>
       </div>
@@ -650,7 +650,7 @@ function Frame16() {
 
 function Frame14() {
   return (
-    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-[384px]">
+    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-full max-w-[384px]">
       <div aria-hidden="true" className="absolute border border-[#f0f0f0] border-solid inset-0 pointer-events-none rounded-[12px]" />
       <Frame15 />
       <Frame16 />
@@ -687,7 +687,7 @@ function Frame21() {
 
 function Frame17() {
   return (
-    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-[384px]">
+    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-full max-w-[384px]">
       <div aria-hidden="true" className="absolute border border-[#f0f0f0] border-solid inset-0 pointer-events-none rounded-[12px]" />
       <Frame20 />
       <Frame21 />
@@ -724,7 +724,7 @@ function Frame24() {
 
 function Frame22() {
   return (
-    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-[384px]">
+    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-full max-w-[384px]">
       <div aria-hidden="true" className="absolute border border-[#f0f0f0] border-solid inset-0 pointer-events-none rounded-[12px]" />
       <Frame23 />
       <Frame24 />
@@ -761,7 +761,7 @@ function Frame27() {
 
 function Frame25() {
   return (
-    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-[384px]">
+    <div className="bg-[#fefefe] content-stretch flex flex-col gap-[16px] h-[203px] items-start p-[16px] relative rounded-[12px] shrink-0 w-full max-w-[384px]">
       <div aria-hidden="true" className="absolute border border-[#f0f0f0] border-solid inset-0 pointer-events-none rounded-[12px]" />
       <Frame26 />
       <Frame27 />
@@ -771,7 +771,7 @@ function Frame25() {
 
 function Frame18() {
   return (
-    <div className="content-center flex flex-wrap gap-[40px] h-[445px] items-center justify-center relative shrink-0 w-[1216px]">
+    <div className="content-center flex flex-wrap gap-[40px] h-[445px] items-center justify-center relative shrink-0 w-full max-w-[1216px]">
       <Frame14 />
       <Frame17 />
       <Frame22 />
@@ -784,7 +784,7 @@ function Frame19() {
   return (
     <div className="h-[581px] relative shrink-0 w-full">
       <div className="flex flex-col items-center justify-center size-full">
-        <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-[112px] relative size-full">
+        <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-4 md:px-[112px] relative size-full">
           <Frame13 />
           <Frame18 />
         </div>
@@ -819,7 +819,7 @@ function Heading() {
           </div>
         </div>
       </div>
-      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">Is NoteSpace free for students?</p>
+      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-full max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">Is NoteSpace free for students?</p>
     </div>
   );
 }
@@ -858,7 +858,7 @@ function Heading1() {
           <Chevron1 />
         </div>
       </div>
-      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">How does real-time collaboration work?</p>
+      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-full max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">How does real-time collaboration work?</p>
     </div>
   );
 }
@@ -885,7 +885,7 @@ function Heading2() {
           <Chevron2 />
         </div>
       </div>
-      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">How are my notes kept secure?</p>
+      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-full max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">How are my notes kept secure?</p>
     </div>
   );
 }
@@ -912,7 +912,7 @@ function Heading3() {
           <Chevron3 />
         </div>
       </div>
-      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">What makes NoteSpace different from Google Docs or Notion?</p>
+      <p className="flex-[1_0_0] font-['General_Sans',sans-serif] font-semibold leading-[1.6] max-w-full max-w-[650px] min-h-px min-w-px not-italic relative text-[#6c6c6c] text-[18px]">What makes NoteSpace different from Google Docs or Notion?</p>
     </div>
   );
 }
@@ -947,7 +947,7 @@ function Frame52() {
 
 function Frame53() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-[835px]">
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full max-w-[835px]">
       <div className="flex flex-col font-['General_Sans',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#545454] text-[32px] text-center w-full">
         <p className="leading-[1.5]">Frequently Asked Questions</p>
       </div>
@@ -973,7 +973,7 @@ function Frame29() {
   return (
     <div className="relative shrink-0 w-full">
       <div className="flex flex-col items-center justify-center size-full">
-        <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-[112px] py-[24px] relative w-full">
+        <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-4 md:px-[112px] py-[24px] relative w-full">
           <Frame30 />
           <div className="bg-[#f97316] content-stretch flex gap-[8px] h-[48px] items-center justify-center px-[16px] py-[8px] relative rounded-[16px] shrink-0 w-[144px]" data-name="Buttons">
             <p className="font-['General_Sans',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#fefefe] text-[14px] whitespace-nowrap">Sign up</p>
@@ -1024,7 +1024,7 @@ function Frame35() {
 
 function Frame32() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-[316px]">
+    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full max-w-[316px]">
       <Frame33 />
       <Frame35 />
     </div>
@@ -1053,7 +1053,7 @@ function Frame37() {
 function Frame31() {
   return (
     <div className="relative shrink-0 w-full">
-      <div className="content-stretch flex font-['General_Sans',sans-serif] font-medium items-start justify-between leading-[1.6] not-italic px-[112px] py-[24px] relative w-full">
+      <div className="content-stretch flex font-['General_Sans',sans-serif] font-medium items-start justify-between leading-[1.6] not-italic px-4 md:px-[112px] py-[24px] relative w-full">
         <Frame32 />
         <Frame37 />
       </div>

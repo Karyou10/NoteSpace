@@ -15,7 +15,7 @@ function Frame1() {
   return (
     <div className="relative shrink-0 w-full">
       <div className="flex flex-col items-center justify-center size-full">
-        <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-[112px] py-[24px] relative w-full">
+        <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-4 md:px-[112px] py-[24px] relative w-full">
           <Frame />
           <div className="bg-[#f97316] content-stretch flex gap-[8px] h-[48px] items-center justify-center px-[16px] py-[8px] relative rounded-[16px] shrink-0 w-[144px]" data-name="Buttons">
             <p className="font-['General_Sans',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#fefefe] text-[14px] whitespace-nowrap">Sign up</p>
@@ -66,7 +66,7 @@ function Frame4() {
 
 function Frame6() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-[316px]">
+    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full max-w-[316px]">
       <Frame5 />
       <Frame4 />
     </div>
@@ -95,7 +95,7 @@ function Frame9() {
 function Frame7() {
   return (
     <div className="relative shrink-0 w-full">
-      <div className="content-stretch flex font-['General_Sans',sans-serif] font-medium items-start justify-between leading-[1.6] not-italic px-[112px] py-[24px] relative w-full">
+      <div className="content-stretch flex font-['General_Sans',sans-serif] font-medium items-start justify-between leading-[1.6] not-italic px-4 md:px-[112px] py-[24px] relative w-full">
         <Frame6 />
         <Frame9 />
       </div>

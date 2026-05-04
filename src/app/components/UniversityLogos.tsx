@@ -47,7 +47,7 @@ function InfiniteLogoCarousel() {
   ];
 
   return (
-    <div className="relative w-[1216px] overflow-hidden">
+    <div className="relative w-full max-w-[1216px] overflow-hidden">
       {/* Gradients for smooth fade at edges */}
       <div className="absolute left-0 top-0 bottom-0 w-[150px] z-10 bg-gradient-to-r from-[#fefefe] to-transparent" />
       <div className="absolute right-0 top-0 bottom-0 w-[150px] z-10 bg-gradient-to-l from-[#fefefe] to-transparent" />
@@ -68,7 +68,7 @@ function InfiniteLogoCarousel() {
 
 export default function UniversityLogos() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full max-w-[1216px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full max-w-full max-w-[1216px]">
       <TrustedBadge />
       <div className="content-stretch flex flex-col gap-[48px] items-center relative shrink-0 w-full">
         <SectionHeading />

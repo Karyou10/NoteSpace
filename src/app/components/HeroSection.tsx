@@ -43,7 +43,7 @@ export default function HeroSection() {
         <HeroText />
         <HeroCTA />
       </div>
-      <div className="h-[438px] relative rounded-[24px] shrink-0 w-[803px]">
+      <div className="h-[438px] relative rounded-[24px] shrink-0 w-full max-w-[803px]">
         <img alt="Students collaborating" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgImage285} />
       </div>
     </div>

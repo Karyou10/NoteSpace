@@ -33,7 +33,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
 
 export default function FAQSection() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full max-w-[800px] mx-auto px-[112px]">
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full max-w-full max-w-[800px] mx-auto px-4 md:px-[112px]">
       <div className="flex flex-col font-['General_Sans',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#545454] text-[40px] text-center w-full">
         <p className="leading-[1.5]">Frequently Asked Questions</p>
       </div>

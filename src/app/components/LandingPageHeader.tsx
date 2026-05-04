@@ -74,7 +74,7 @@ export default function LandingPageHeader() {
   return (
     <header className="bg-[#fefefe] sticky top-0 z-50 shadow-[0px_8px_21.8px_0px_rgba(249,115,22,0.1)] shrink-0 w-full">
       <div className="flex flex-row items-center size-full">
-        <div className="content-stretch flex items-center justify-between px-[112px] py-[8px] relative w-full">
+        <div className="content-stretch flex items-center justify-between px-4 md:px-[112px] py-[8px] relative w-full">
           <Frame />
           <NavLinks />
           <AuthButtons />
