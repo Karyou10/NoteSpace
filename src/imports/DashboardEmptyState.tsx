@@ -1,5 +1,5 @@
 import svgPaths from "./svg-0512yemt0y";
-import imgAvatar from "figma:asset/0d854246efa7bc76a1ca6efbcc1e280ef9f601ab.png";
+const imgAvatar = "https://placehold.co/400";
 
 function Logo() {
   return (

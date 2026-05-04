@@ -1,11 +1,11 @@
 import svgPaths from "./svg-81u4lsk3wh";
 import imgImage285 from "../assets/image 285.png";
-import imgStanford1 from "figma:asset/3694efa050ed2647e7677aa9ad276addd3b421f9.png";
-import imgToronto1 from "figma:asset/239faf4834a94b6e4ac0f408f92f9611eed24442.png";
-import imgMelbourne1 from "figma:asset/fdaf34cee24e94ad39945b2e1a7f21b04f7fb3fd.png";
-import imgEth1 from "figma:asset/359699e69525ceea49e2f47d8dd515f811cffb76.png";
-import imgUct1 from "figma:asset/30600201c5e807a9cfb79f2988597593b3756f5d.png";
-import imgNus1 from "figma:asset/72b7051fd99a2cbd0aaace36e2d1da52053304a3.png";
+const imgStanford1 = "https://placehold.co/400";
+const imgToronto1 = "https://placehold.co/400";
+const imgMelbourne1 = "https://placehold.co/400";
+const imgEth1 = "https://placehold.co/400";
+const imgUct1 = "https://placehold.co/400";
+const imgNus1 = "https://placehold.co/400";
 
 function Logo() {
   return (

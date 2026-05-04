@@ -1,5 +1,5 @@
 import svgPaths from "./svg-r1xaop67hy";
-import imgComponent2 from "figma:asset/43168d1dbf115c03b4c63a29c9bccd1456e4beea.png";
+const imgComponent2 = "https://placehold.co/400";
 
 function Frame2() {
   return (
