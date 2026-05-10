@@ -6,6 +6,9 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Notes from "./pages/Notes";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetLinkSent from "./pages/ResetLinkSent";
+import CreateNewPassword from "./pages/CreateNewPassword";
 
 export const router = createBrowserRouter([
   {
@@ -35,5 +38,17 @@ export const router = createBrowserRouter([
   {
     path: "/notes",
     Component: Notes,
+  },
+  {
+    path: "/forgot-password",
+    Component: ForgotPassword,
+  },
+  {
+    path: "/reset-link-sent",
+    Component: ResetLinkSent,
+  },
+  {
+    path: "/create-new-password",
+    Component: CreateNewPassword,
   },
 ]);

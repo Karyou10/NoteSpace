@@ -148,12 +148,12 @@ export default function Login() {
               </div>
 
               {/* Forgot Password Link */}
-              <button
-                type="button"
-                className="font-['General_Sans',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#6c6c6c] text-[14px] text-right w-full hover:text-[#f97316] transition-colors"
+              <Link
+                to="/forgot-password"
+                className="font-['General_Sans',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[#6c6c6c] text-[14px] text-right w-full hover:text-[#f97316] transition-colors block"
               >
                 Forgot password?
-              </button>
+              </Link>
             </div>
 
             {/* Submit Button */}
