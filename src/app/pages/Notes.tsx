@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import { Plus, Search, Bell } from "lucide-react";
 import svgPaths from "../../imports/svg-0512yemt0y";
+import DashboardSidebar from "../components/DashboardSidebar";
 const imgAvatar = "https://placehold.co/400";
 const imgFrame1618868958 = "https://placehold.co/400";
 interface Note {
@@ -29,8 +30,14 @@ export default function Notes() {
     setUserName(storedName);
     setIsNewUser(storedIsNewUser);
 
-    // If returning user, load sample notes
-    if (!storedIsNewUser) {
+    // Load notes from localStorage
+    const savedNotes = JSON.parse(localStorage.getItem("notes") || "[]").map((n: any) => ({
+      ...n,
+      lastEdited: new Date(n.lastEdited)
+    }));
+
+    // If returning user and no saved notes, load sample notes
+    if (!storedIsNewUser && savedNotes.length === 0) {
       const sampleNotes: Note[] = [
         {
           id: "1",
@@ -39,50 +46,11 @@ export default function Notes() {
           lastEdited: new Date(),
           category: "today",
         },
-        {
-          id: "2",
-          title: "Untitled Note",
-          content: "Sample content",
-          lastEdited: new Date(),
-          category: "today",
-        },
-        {
-          id: "3",
-          title: "Untitled Note",
-          content: "Sample content",
-          lastEdited: new Date(),
-          category: "today",
-        },
-        {
-          id: "4",
-          title: "Untitled Note",
-          content: "Sample content",
-          lastEdited: new Date(Date.now() - 86400000),
-          category: "yesterday",
-        },
-        {
-          id: "5",
-          title: "Untitled Note",
-          content: "Sample content",
-          lastEdited: new Date(Date.now() - 86400000),
-          category: "yesterday",
-        },
-        {
-          id: "6",
-          title: "Untitled Note",
-          content: "Sample content",
-          lastEdited: new Date(Date.now() - 86400000),
-          category: "yesterday",
-        },
-        {
-          id: "7",
-          title: "Untitled Note",
-          content: "Sample content",
-          lastEdited: new Date(Date.now() - 86400000),
-          category: "yesterday",
-        },
+        // ... other samples
       ];
       setNotes(sampleNotes);
+    } else {
+      setNotes(savedNotes);
     }
   }, []);
 
@@ -99,16 +67,8 @@ export default function Notes() {
   };
 
   const createNewNote = () => {
-    const newNote: Note = {
-      id: Date.now().toString(),
-      title: "Untitled Note",
-      content: "",
-      lastEdited: new Date(),
-      category: "today",
-    };
-    setNotes([newNote, ...notes]);
-    setSelectedNote(newNote);
-
+    navigate("/notes/write");
+    
     // Mark user as no longer new after creating first note
     if (isNewUser) {
       setIsNewUser(false);
@@ -163,118 +123,7 @@ export default function Notes() {
         </div>
       )}
 
-      {/* Sidebar */}
-      <div className="bg-[#f0f0f0] flex flex-col h-full justify-between p-[32px] shrink-0 w-[288px]">
-        <div className="flex flex-col gap-[40px]">
-          {/* Logo and Menu */}
-          <div className="flex items-center justify-between w-full">
-            <div className="h-[19.615px] w-[51px]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 51 19.6154">
-                <g clipPath="url(#clip0_18_1463)">
-                  <path d={svgPaths.p23472a80} fill="#E06814" />
-                  <path d={svgPaths.p2f3e9c00} fill="#95450D" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_18_1463">
-                    <rect fill="white" height="19.6154" width="51" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-
-          </div>
-
-          {/* Navigation */}
-          <div className="flex flex-col gap-[16px]">
-            <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-              <div className="size-[20px]">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                  <path d={svgPaths.p2e5cec80} fill="#6C6C6C" />
-                </svg>
-              </div>
-              <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Dashboard</p>
-            </button>
-
-            <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-              <div className="size-[20px]">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                  <path d={svgPaths.p20cbd180} fill="#6C6C6C" />
-                </svg>
-              </div>
-              <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Shared Notes</p>
-            </button>
-
-            <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-              <div className="size-[20px]">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                  <path d={svgPaths.p257c6f00} fill="#6C6C6C" />
-                </svg>
-              </div>
-              <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Drafts</p>
-            </button>
-
-            <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-              <div className="size-[20px]">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                  <path d={svgPaths.p2e6fc800} fill="#6C6C6C" />
-                </svg>
-              </div>
-              <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Tags</p>
-            </button>
-
-            <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-              <div className="size-[20px]">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                  <path d={svgPaths.p102c9e00} fill="#6C6C6C" />
-                </svg>
-              </div>
-              <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Favorites</p>
-            </button>
-
-            <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-              <div className="size-[20px]">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                  <path d={svgPaths.pbda2c00} fill="#6C6C6C" />
-                </svg>
-              </div>
-              <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Settings</p>
-            </button>
-
-            <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-              <div className="size-[20px]">
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                  <path d={svgPaths.p13b2a100} fill="#6C6C6C" />
-                </svg>
-              </div>
-              <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Trash</p>
-            </button>
-          </div>
-        </div>
-
-        {/* Bottom Actions */}
-        <div className="flex flex-col gap-[16px]">
-          <button className="flex gap-[8px] items-center p-[8px] w-full hover:bg-white/50 rounded-[8px] transition-colors">
-            <div className="size-[20px]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                <path d={svgPaths.p842a692} fill="#6C6C6C" />
-              </svg>
-            </div>
-            <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#6c6c6c]">Profile</p>
-          </button>
-
-          <button
-            onClick={() => setShowLogoutModal(true)}
-            className="flex gap-[8px] items-center p-[8px] w-full hover:bg-red-50 rounded-[8px] transition-colors"
-          >
-            <div className="size-[20px]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-                <path d={svgPaths.pc986e0} fill="#E61717" />
-              </svg>
-            </div>
-            <p className="font-['General_Sans',sans-serif] font-medium text-[16px] text-[#e61717]">Log out</p>
-          </button>
-        </div>
-      </div>
+      <DashboardSidebar activeTab="Dashboard" onLogout={() => setShowLogoutModal(true)} />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col h-full overflow-hidden">

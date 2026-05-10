@@ -11,3 +11,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.rich-text-content ul { list-style-type: disc; padding-left: 20px; }
+.rich-text-content ol { list-style-type: decimal; padding-left: 20px; }
+.rich-text-content h1 { font-size: 2em; font-weight: bold; }
+.rich-text-content h2 { font-size: 1.5em; font-weight: bold; }

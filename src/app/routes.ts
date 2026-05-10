@@ -9,6 +9,7 @@ import Notes from "./pages/Notes";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetLinkSent from "./pages/ResetLinkSent";
 import CreateNewPassword from "./pages/CreateNewPassword";
+import NoteWriting from "./pages/NoteWriting";
 
 export const router = createBrowserRouter([
   {
@@ -50,5 +51,9 @@ export const router = createBrowserRouter([
   {
     path: "/create-new-password",
     Component: CreateNewPassword,
+  },
+  {
+    path: "/notes/write",
+    Component: NoteWriting,
   },
 ]);
