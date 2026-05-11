@@ -7,7 +7,7 @@ export default function MobileNotSupported() {
     <div className="fixed inset-0 bg-white z-[9999] flex flex-col items-center justify-center p-[24px] text-center">
       <div className="flex flex-col items-center gap-[40px] max-w-[400px]">
         {/* Illustration */}
-        <div className="relative w-full aspect-square max-w-[320px]">
+        <div className="relative w-full aspect-square max-w-[240px]">
           <img 
             src="/mobile-not-supported.png" 
             alt="Designed for Desktop"
